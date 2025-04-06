@@ -43,9 +43,10 @@ function Navbar() {
         )}
       </div>
 
+      {/* תפריט למובייל - מעוצב בשורה אופקית */}
       {isMobile && isOpen && (
-        <div className="px-4 pb-4 text-right">
-          <ul className="flex flex-col gap-3 text-sm text-gray-800 font-medium">
+        <div className="px-4 pb-4 text-center">
+          <ul className="flex flex-wrap justify-center gap-4 text-sm text-gray-800 font-medium flex-row-reverse">
             <li><Link to="/" onClick={() => setIsOpen(false)}>בית</Link></li>
             <li><Link to="/register" onClick={() => setIsOpen(false)}>הרשמה</Link></li>
             <li><Link to="/about" onClick={() => setIsOpen(false)}>אודות</Link></li>

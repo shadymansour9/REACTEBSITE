@@ -11,6 +11,7 @@ body {
   padding: 0;
   min-height: 100vh;
   color: #333;
+  text-align: center; /* מוסיף יישור מרכזי לטקסט ולתפריט במובייל */
 }
 
 /* עיצוב תמונות */
@@ -18,7 +19,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 
 /* ספציפית ללוגו */
 img[alt="RM Logo"] {
@@ -60,7 +60,19 @@ a:hover {
   text-decoration: underline;
 }
 
-/* מרווח מתחת לתפריט הקבוע */
+/* ניווט */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block; /* הופך כל לינק לאופקי */
+  margin: 0 10px;
+}
+
+/* רווח מתחת ל-navbar הקבוע */
 .page-content {
   padding-top: 80px;
 }
